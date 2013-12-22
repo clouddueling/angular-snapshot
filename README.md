@@ -9,6 +9,8 @@ A distributed way to create screenshots and capture the html of a javascript SPA
 
 ## Usage
 
+This project is based on: https://github.com/rogerwang/node-webkit
+
 1. Drop node-webkit.app into the root of this project.
 2. Double click that executable or rune `open node-webkit.app` from terminal.
 
