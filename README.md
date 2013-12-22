@@ -13,3 +13,7 @@ A distributed way to create screenshots and capture the html of a javascript SPA
 2. Double click that executable or rune `open node-webkit.app` from terminal.
 
 Please be aware that this is very new.  Any feedback would be much appreciated.
+
+## Downloads
+
+Builds for Linux (32|64) bit, Mac, and Windows coming once the api is stable.
