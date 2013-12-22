@@ -1,0 +1,78 @@
+<div class='container'>
+    <div class='row'>
+        <div class='col-sm-6 col-sm-offset-3 text-left'>
+            <form role='form' ng-submit='createJob()'>
+                <fieldset>
+                    <legend>Create a Job</legend>
+
+                    <div class='form-group'>
+                        <label>URL</label>
+                        <input
+                            required
+                            ng-model='newJob.url'
+                            class='form-control'
+                            type='text'>
+                    </div>
+
+                    <div class='form-group'>
+                        <label>Hook URL</label>
+                        <input
+                            required
+                            ng-model='newJob.hookUrl'
+                            class='form-control'
+                            type='text'>
+                        <p class='help-block'>Test your data with http://requestb.in/</p>
+                    </div>
+
+                    <div class='form-group'>
+                        <label>Height</label>
+                        <input
+                            required
+                            ng-model='newJob.height'
+                            class='form-control'
+                            type='number'>
+                    </div>
+
+                    <div class='form-group'>
+                        <label>Width</label>
+                        <input
+                            required
+                            ng-model='newJob.width'
+                            class='form-control'
+                            type='number'>
+                    </div>
+
+                    <div class='form-group'>
+                        <label>Delay (in milliseconds)</label>
+                        <input
+                            ng-model='newJob.delay'
+                            class='form-control'
+                            type='text'>
+                    </div>
+
+                    <div class='form-group'>
+                        <label>Data</label>
+                        <textarea
+                            ng-model='newJob.data'
+                            class='form-control'></textarea>
+                        <p class='help-block'>Custom data to be passed to the hook URL.</p>
+                    </div>
+
+                    <div class='form-group'>
+                        <button
+                            type='submit'
+                            class='btn btn-success btn-lg'>
+                            Submit
+                        </button>
+
+                        <a
+                            ui-sref='listen'
+                            class='btn btn-link btn-lg'>
+                            Cancel
+                        </a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

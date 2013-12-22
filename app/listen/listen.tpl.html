@@ -1,0 +1,32 @@
+<iframe
+    ng-if='selectedJob'
+    ng-src='{{ selectedJob.url }}'
+    width='1100'
+    height='800'
+    id='iframe'
+    scrolling='no'
+    style='margin: 0; overflow: hidden;'
+    frameborder='0'></iframe>
+
+<div ng-if='!selectedJob' class='container'>
+    <div class='row'>
+        <div class='col-sm-12 text-center'>
+            <img src='common/img/mustache.jpg'>
+            <div class='page-header'>
+                <h1>Waiting for jobs...</h1>
+            </div>
+
+            <a
+                ui-sref='insert'
+                class='btn btn-lg btn-success'>
+                Insert URL
+            </a>
+
+            <a
+                ui-sref='settings'
+                class='btn btn-lg btn-primary'>
+                Settings
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+{
+  "name": "screenshot-server",
+  "version": "1.0.0",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "angular": "1.2.5",
+    "angular-fire": "0.5.0",
+    "bootstrap": "3.0.3",
+    "moment": "2.4.0",
+    "underscore": "1.5.2",
+    "angular-ui-router": "~0.2.7",
+    "ngstorage": "~0.3.0",
+    "jquery": "~2.0.3"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "angular": "1.2.5"
+  }
+}

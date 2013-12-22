@@ -1,0 +1,4 @@
+node_modules/
+bower_components/
+nw.app
+node_webkit.app

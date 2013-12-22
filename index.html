@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app='screenshot-server'>
+    <head>
+        <title>CloudDueling.com Screenshot Server</title>
+        <link href="build/css/base.min.css" type='text/css' rel="stylesheet">
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div ng-controller='MainCtrl'>
+            <div ui-view></div>
+        </div>
+
+        <script src='build/js/base.min.js'></script>
+
+        <script src='app.js'></script>
+        <script src='app/main.js'></script>
+        <script src='app/listen/listen.js'></script>
+        <script src='app/settings/settings.js'></script>
+        <script src='app/insert/insert.js'></script>
+    </body>
+</html>

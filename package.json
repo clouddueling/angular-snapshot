@@ -1,0 +1,22 @@
+{
+  "name": "angular-screenshot-server",
+  "description": "",
+  "main": "index.html",
+  "version": "0.0.1",
+  "window": {
+    "height": 800,
+    "width": 1100
+  },
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-node-webkit-builder": "~0.1.13",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "request": "~2.30.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "~0.7.0"
+  }
+}

@@ -1,0 +1,41 @@
+<div class='container'>
+    <div class='row'>
+        <div class='col-sm-6 col-sm-offset-3 text-left'>
+            <form role='form' ng-submit='updateSettings(settingsCopy)'>
+                <fieldset>
+                    <legend>Settings</legend>
+
+                    <div class='form-group'>
+                        <label>Firebase URL</label>
+                        <input ng-model='settingsCopy.firebaseUrl' class='form-control' type='text'>
+                        <p class='help-block'>https://reginald.firebaseio.com/</p>
+                    </div>
+
+                    <div class='form-group'>
+                        <label>Default Delay (in milliseconds)</label>
+                        <input ng-model='settingsCopy.defaultDelay' class='form-control' type='text'>
+                    </div>
+
+                    <div class='form-group'>
+                        <label>Max Delay (in milliseconds)</label>
+                        <input ng-model='settingsCopy.maxDelay' class='form-control' type='text'>
+                    </div>
+
+                    <div class='form-group'>
+                        <button
+                            type='submit'
+                            class='btn btn-lg btn-primary'>
+                            Submit
+                        </button>
+
+                        <a
+                            ui-sref='listen'
+                            class='btn btn-link btn-lg'>
+                            Cancel
+                        </a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
