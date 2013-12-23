@@ -7,6 +7,8 @@ Distributed node-webkit program that watches for websites to screenshot and capt
 
 A distributed way to create screenshots and capture the html of a javascript SPA app.  It accepts a firebase url so you can either run this yourself when you need to or POST into the main firebase db and take advantage of someone else running this program.
 
+If you have a computer that's on all the time you can contribute to the community by running this.
+
 ## Usage
 
 This project is based on: https://github.com/rogerwang/node-webkit
