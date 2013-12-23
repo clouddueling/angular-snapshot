@@ -21,3 +21,6 @@ Please be aware that this is very new.  Any feedback would be much appreciated.
 ## Downloads
 
 Builds for Linux (32|64) bit, Mac, and Windows coming once the api is stable.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/clouddueling/angular-snapshot/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
