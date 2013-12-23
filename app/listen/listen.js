@@ -46,6 +46,10 @@
             });
         };
 
+        $scope.resetSize = function() {
+            win.resizeTo(600, 600);
+        };
+
 
 
         //
@@ -77,6 +81,9 @@
             if (delay > $localStorage.settings.maxDelay) {
                 delay = $localStorage.settings.maxDelay;
             }
+
+            // Resize the window
+            win.resizeTo(job.width, job.height);
 
             $timeout(function() {
                 l('Capturing screenshot and html...');
@@ -113,6 +120,7 @@
                 l('Selecting next job...');
                 $scope.main.running = false;
                 $scope.deselectJob();
+                $scope.resetSize();
                 $scope.nextJob();
             });
         };

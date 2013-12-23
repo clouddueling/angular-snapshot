@@ -4,8 +4,9 @@
   "main": "index.html",
   "version": "0.0.1",
   "window": {
-    "height": 800,
-    "width": 1100
+    "icon": "common/img/mustache.jpg",
+    "height": 600,
+    "width": 600
   },
   "dependencies": {
     "grunt": "~0.4.2",

@@ -4,7 +4,7 @@
 
     angular.module('insert', [])
 
-    .controller('InsertCtrl', ['$scope', '$localStorage', function($scope, $localStorage) {
+    .controller('InsertCtrl', ['$scope', '$localStorage', '$state', function($scope, $localStorage, $state) {
         $scope.main.running = true;
         $localStorage.newJob = $localStorage.newJob || {};
         $scope.newJob = $localStorage.newJob;
