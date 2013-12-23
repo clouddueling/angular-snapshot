@@ -21,3 +21,13 @@ Please be aware that this is very new.  Any feedback would be much appreciated.
 ## Downloads
 
 Builds for Linux (32|64) bit, Mac, and Windows coming once the api is stable.
+
+## Preview
+
+<img src='https://dl.dropboxusercontent.com/u/7827818/Screen%20Shot%202013-12-23%20at%2012.04.42%20PM.png'>
+
+<img src='https://dl.dropboxusercontent.com/u/7827818/Screen%20Shot%202013-12-23%20at%2012.04.46%20PM.png'>
+
+<img src='https://dl.dropboxusercontent.com/u/7827818/Screen%20Shot%202013-12-23%20at%2012.04.55%20PM.png'>
+
+<img src='https://dl.dropboxusercontent.com/u/7827818/Screen%20Shot%202013-12-23%20at%2012.05.08%20PM.png'>
