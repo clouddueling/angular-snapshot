@@ -50,6 +50,13 @@
             win.resizeTo(600, 600);
         };
 
+        $scope.resetIframe = function() {
+            $scope.main.running = false;
+            $scope.deselectJob();
+            $scope.resetSize();
+            $scope.nextJob();
+        };
+
 
 
         //
@@ -96,10 +103,22 @@
             win.capturePage(function(img) {
                 l('Posting to hook url...');
                 $scope.postHookUrl(job, key, img, html);
-            }, 'jpeg');
+            }, 'png');
         };
 
         $scope.postHookUrl = function(job, key, img, html) {
+            if (! job.hookUrl) {
+                l('Moving ' + key + ' to error jobs...');
+                job.errorMessage = "No hook url found.";
+                $scope.main.runningJobs.$remove(key);
+                job.errorAt = new Date().getTime();
+                $scope.main.errorJobs[key] = job;
+                $scope.main.errorJobs.$save(key);
+
+                $scope.resetIframe();
+                return;
+            }
+
             request.post(job.hookUrl, {
                 form: {
                     image: img,
@@ -118,12 +137,10 @@
                 $scope.main.completedJobs.$save(key);
 
                 l('Selecting next job...');
-                $scope.main.running = false;
-                $scope.deselectJob();
-                $scope.resetSize();
-                $scope.nextJob();
+                $scope.resetIframe();
             });
         };
+
 
 
         //

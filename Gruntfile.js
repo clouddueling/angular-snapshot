@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                     './bower_components/angular/angular.min.js',
                     './bower_components/angular-ui-router/release/angular-ui-router.min.js',
                     './app/common/firebase.js',
-                    './bower_components/angular-fire/angularfire.min.js',
+                    './bower_components/angularfire/angularfire.min.js',
                     './bower_components/ngstorage/ngStorage.min.js'
                 ],
                 dest: './build/js/base.js'
@@ -59,5 +59,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.registerTask('default', ['concat', 'uglify', 'less', 'cssmin']);
-    grunt.registerTask('compile', ['nodewebkit']);
+    grunt.registerTask('compile', ['concat', 'uglify', 'less', 'cssmin', 'nodewebkit']);
 };

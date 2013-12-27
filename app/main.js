@@ -44,6 +44,7 @@
         $scope.main.pendingJobs = $firebase(new Firebase($localStorage.settings.firebaseUrl + 'pending'));
         $scope.main.runningJobs = $firebase(new Firebase($localStorage.settings.firebaseUrl + 'running'));
         $scope.main.completedJobs = $firebase(new Firebase($localStorage.settings.firebaseUrl + 'completed'));
+        $scope.main.errorJobs = $firebase(new Firebase($localStorage.settings.firebaseUrl + 'error'));
     }]);
 
 })();
