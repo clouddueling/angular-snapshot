@@ -79,6 +79,7 @@
             $scope.main.runningJobs.$save(key);
 
             l('Selecting job...');
+            l(job);
             $scope.selectJob(job);
 
             l('Preparing delay...');
